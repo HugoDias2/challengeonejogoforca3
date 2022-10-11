@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/forca.css" media="screen">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+  
+    <div class="container" >
+        <div id="img"></div>
+        <div id="segredo">
+            <div class="letras"></div>
+            <div class="letras"></div>
+            <div class="letras"></div>
+            <div class="letras"></div>
+            <div class="letras"></div>
+            <div class="letras"></div>
+        </div>
+        
+        <div id="teclado">
+            <div class="teclas">
+                <button class="bt" id="tecla-A" onclick="verificaLetras('A')">A</button>
+                <button class="bt" id="tecla-B" onclick="verificaLetras('B')">B</button>
+                <button class="bt" id="tecla-C" onclick="verificaLetras('C')">C</button>
+                <button class="bt" id="tecla-D" onclick="verificaLetras('D')">D</button>
+                <button class="bt" id="tecla-E" onclick="verificaLetras('E')">E</button>
+                <button class="bt" id="tecla-F" onclick="verificaLetras('F')">F</button>
+                <button class="bt" id="tecla-G" onclick="verificaLetras('G')">G</button>
+                <button class="bt" id="tecla-H" onclick="verificaLetras('H')">H</button>
+                </div>
+            <div class="teclas">
+                <button class="bt" id="tecla-I" onclick="verificaLetras('I')">I</button>
+                <button class="bt" id="tecla-J" onclick="verificaLetras('J')">J</button>
+                <button class="bt" id="tecla-K" onclick="verificaLetras('K')">K</button>
+                <button class="bt" id="tecla-L" onclick="verificaLetras('L')">L</button>
+                <button class="bt" id="tecla-M" onclick="verificaLetras('M')">M</button>
+                <button class="bt" id="tecla-N" onclick="verificaLetras('N')">N</button>
+                <button class="bt" id="tecla-O" onclick="verificaLetras('O')">O</button>
+                <button class="bt" id="tecla-P" onclick="verificaLetras('P')">P</button>
+                <button class="bt" id="tecla-Q" onclick="verificaLetras('Q')">Q</button>
+                </div>
+            <div class="teclas">
+                <button class="bt" id="tecla-R" onclick="verificaLetras('R')">R</button>             
+                <button class="bt" id="tecla-S" onclick="verificaLetras('S')">S</button>
+                <button class="bt" id="tecla-T" onclick="verificaLetras('T')">T</button>
+                <button class="bt" id="tecla-U" onclick="verificaLetras('U')">U</button>
+                <button class="bt" id="tecla-V" onclick="verificaLetras('V')">V</button>
+                <button class="bt" id="tecla-X" onclick="verificaLetras('X')">X</button>
+                <button class="bt" id="tecla-Y" onclick="verificaLetras('Y')">Y</button>
+                <button class="bt" id="tecla-Z" onclick="verificaLetras('Z')">Z</button>
+                <button class="bt"class="novojogo" id="novojogo">🎲</button>         
+        <div id="assunto">
+    </div>
+
+    <div class="new-word" style="display: none;">
+      <input type="button" class="adicionarpalavras" id="adicionarpalavras" value="Adicionar nova palavra">
+      <div class="adicionar">
+        <input type="text" class="newpalavra" id="newpalavra" placeholder="Nova palavra. Ex: Cenoura">
+        <input type="text" class="newcategoria" id="newcategoria" placeholder="Nova categoria. Ex: Legumes">
+        <input type="button" value="Enviar">
+      </div>
+    </div>  
+    
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+              ...
+            </div>
+            <div class="modal-footer">
+              <input type="button" data-dismiss="modal" value="Fechar">
+             <!--<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>--> 
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+    <script src="./js/forca.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+</html>

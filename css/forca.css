@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%, rgb(0, 0, 0) 100%);
+    font-family: 'ubuntu',sans-serif ;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#img{
+    margin-top: 1em;
+    background-image: url("../img/forca.png");
+    width: 245px;
+    height: 280px;
+    background-repeat: no-repeat;
+}
+#segredo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 2em;
+}
+.letras{
+    color: rgb(216, 181, 149);
+    width: 30px;
+    text-align: center;
+    border-bottom: 2px solid rgb(172, 69, 37) ;
+    margin-left: 20px;
+    font-family: 'ubuntu',sans-serif ;
+}
+#teclado{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'ubuntu',sans-serif ;
+}
+
+.bt{
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid rgb(211, 77, 0);
+    box-shadow: 2px 2px 8px rgb(87, 42, 16);
+    color: rgb(104, 46, 12);
+    font-family: 'ubuntu',sans-serif ;
+    font-weight: 900;
+}
+.bt:disabled{
+    cursor: not-allowed;
+}
+.bt:hover{
+    transform: scale(2.0);
+}
+
+.btn-fechar{
+    padding-left: 600em;
+}
+
+
+#assunto{
+    margin-top: 30px;
+    color: rgb(211, 77, 0);
+    font-size: 1.2em;
+    font-family: 'ubuntu',sans-serif ;
+}
+
+@media (min-width: 321px){
+    button {
+        width: 25px;
+        height: 25px;
+    }
+    #assunto{
+        font-size: 1.2em;
+    }
+}
+@media (min-width: 376px){
+    button {
+    width: 30px;
+    height: 30px;
+    }
+    #segredo{
+    font-size: 1.3em;
+    }
+    .letras{
+    width: 18px;
+    }
+    #assunto{
+    font-size: 1.5em;
+    }
+}
+
+@media (min-width: 426px){
+    button {
+    width: 35px;
+    height: 35px;
+    }
+    #segredo{
+    font-size: 1.5em;
+    }
+    .letras{
+    width: 20px;
+    }
+    #assunto{
+    font-size: 1.6em;
+    }
+}
