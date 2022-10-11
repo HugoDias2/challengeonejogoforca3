@@ -62,7 +62,7 @@ const palavras = [
         categoria: "CORES"
     },
     palavra015={
-        nome: "ESVERDEADO",
+        nome: "LARANJA",
         categoria: "CORES"
     },
     palavra016={
