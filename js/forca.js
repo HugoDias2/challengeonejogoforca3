@@ -50,7 +50,7 @@ const palavras = [
         categoria: "CORES"
     },
     palavra012 = {
-        nome: "ARMARELO",
+        nome: "AMARELO",
         categoria: "CORES"
     },
     palavra013 = {
@@ -74,7 +74,7 @@ const palavras = [
         categoria: "CORES"
     },
     palavra018 = {
-        nome: "MARINHO",
+        nome: "AQUARELA",
         categoria: "CORES"
     },
     palavra019 = {
